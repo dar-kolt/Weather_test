@@ -2,9 +2,11 @@ import React from 'react';
 
 const Button = () => {
     return (
-        <button className="btn p-2 rounded-xl text-white font-extrabold bg-pink-500 z-10">
-            ADD
-        </button>
+        <div>
+            <button className="btn absolute top-1 right-1 flex items-center justify-center input-button p-2 rounded-4xl text-white font-extrabold bg-pink-600 z-10 h-11 w-22 uppercase border-none cursor-pointer outline-none">
+                ADD
+            </button>
+        </div>
     );
 };
 

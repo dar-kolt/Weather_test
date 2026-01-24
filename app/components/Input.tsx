@@ -7,12 +7,8 @@ const Input = () => {
     const [state, setState] = useState('')
     return (
         <>
-            <div>
-                <input className={"p-2 px-4 font-extrabold border-2 bg-blue-300 rounded-xl border-blue-700"}
+                <input className={"p-2 px-4 h-13 w-full pr-24 flex font-extrabold border-2 rounded-3xl focus:outline-none border-solid justify-center items-center bg-[#fce6ef] border-[#ffc5dd]"}
                        onChange={(event) => setState(event.target.value)} value={state}/>
-                <Button/>
-            </div>
-
         </>
     );
 };
