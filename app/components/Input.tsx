@@ -3,12 +3,14 @@ import React, {useState} from 'react';
 import Button from "@/app/components/Button";
 
 
-const Input = () => {
-    const [state, setState] = useState('')
+const Input = ({setInputValue, inputValue}: any) => {
+
+
     return (
         <>
-                <input className={"p-2 px-4 h-13 w-full pr-24 flex font-extrabold border-2 rounded-3xl focus:outline-none border-solid justify-center items-center bg-[#fce6ef] border-[#ffc5dd]"}
-                       onChange={(event) => setState(event.target.value)} value={state}/>
+            <input
+                className={"p-2 px-4 h-13 w-full pr-24 flex font-extrabold border-2 rounded-3xl focus:outline-none border-solid justify-center items-center bg-[#fce6ef] border-[#ffc5dd]"}
+                onChange={(event) => setInputValue(event.target.value)} value={inputValue}/>
         </>
     );
 };
